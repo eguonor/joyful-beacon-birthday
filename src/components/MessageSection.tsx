@@ -1,6 +1,6 @@
 const MessageSection = () => {
   return (
-    <section className="py-20 px-4 bg-card">
+    <section id="message-section" className="py-20 px-4 bg-card">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="font-elegant text-4xl md:text-5xl font-semibold text-primary mb-4">
