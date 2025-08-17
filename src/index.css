@@ -126,6 +126,15 @@
     animation: gradient-flow 3s ease infinite;
   }
   
+  .text-animated {
+    background: var(--gradient-celebration);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    animation: rainbow-text 4s ease-in-out infinite, bounce-text 2s ease-in-out infinite;
+  }
+  
   .bg-celebration {
     background: var(--gradient-celebration);
   }
@@ -145,6 +154,21 @@
   }
   50% {
     transform: translateY(-10px);
+  }
+}
+
+@keyframes bounce-text {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  25% {
+    transform: translateY(-5px) scale(1.02);
+  }
+  50% {
+    transform: translateY(-8px) scale(1.05);
+  }
+  75% {
+    transform: translateY(-3px) scale(1.02);
   }
 }
 
@@ -169,5 +193,28 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@keyframes rainbow-text {
+  0% {
+    background-position: 0% 50%;
+    filter: hue-rotate(0deg);
+  }
+  25% {
+    background-position: 100% 50%;
+    filter: hue-rotate(90deg);
+  }
+  50% {
+    background-position: 100% 100%;
+    filter: hue-rotate(180deg);
+  }
+  75% {
+    background-position: 0% 100%;
+    filter: hue-rotate(270deg);
+  }
+  100% {
+    background-position: 0% 50%;
+    filter: hue-rotate(360deg);
   }
 }

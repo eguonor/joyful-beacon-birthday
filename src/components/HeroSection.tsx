@@ -26,13 +26,13 @@ const HeroSection = () => {
               : "translate-y-8 opacity-0 scale-95"
           }`}
         >
-          <h1 className="font-celebration text-6xl md:text-8xl lg:text-9xl font-bold text-celebration mb-4 bounce-gentle">
+          <h1 className="font-celebration text-6xl md:text-8xl lg:text-9xl font-bold text-animated mb-4">
             Happy Birthday
           </h1>
-          <h2 className="font-elegant text-4xl md:text-6xl lg:text-7xl font-semibold text-primary mb-8 float">
+          <h2 className="font-elegant text-4xl md:text-6xl lg:text-7xl font-semibold text-animated float">
             Joy
           </h2>
-          <div className="w-24 h-1 bg-celebration mx-auto rounded-full glow"></div>
+          <div className="w-24 h-1 bg-celebration mx-auto rounded-full glow bounce-gentle"></div>
         </div>
         
         <div
